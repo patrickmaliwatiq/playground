@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/playground.css">
+        <link rel="stylesheet" href="css/styles_page.css">
+        <link rel="stylesheet" href="css/styles_common.css">
+        <link rel="stylesheet" href="css/initialize.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <title>Cariboo Hill Temple</title>
+    </head>
+
+    <body>
+
+        <div id="mainContainer">
+            <div class="redbar"></div>
+            <div id="title"></div>
+            <!-- MENU -->
+            <div id="menu" class="menu">
+                <ul id="sddm">
+                        <li class="sep"><a href="#home" 
+                                onmouseover="mopen('m1')" 
+                                onmouseout="mclosetime()">home</a>
+                        </li>
+                        <li class="sep"><a href="#timesanddirections" 
+                                onmouseover="mopen('m2')" 
+                                onmouseout="mclosetime()">about us</a>
+                                <div id="m2" 
+                                        onmouseover="mcancelclosetime()" 
+                                        onmouseout="mclosetime()">
+                                <a href="#timesanddirections">times and directions</a>
+                                <a href="#visitorinformation">visitor information</a>
+                                <a href="#ourvalues">our values</a>
+                                </div>
+                        </li>
+                        <li class="sep"><a href="#calendarandevents">events</a></li>
+                        <li class="sep"><a href="#resources">resources</a></li>
+                        <li><a href="#contact">contact</a></li>
+                </ul>
+            </div>
+            <!-- MENU -->
+
+            <!-- SLIDESHOW -->
+			<div id="slideshow">
+				<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="940" height="300" id="slideshow" align="middle">
+				<param name="allowScriptAccess" value="sameDomain" />
+				<param name="movie" value="slideshow.swf" /><param name="quality" value="high" /><param name="bgcolor" value="#FFFFFF" /><embed src="slideshow.swf" quality="high" bgcolor="#ffffff" width="940" height="300" name="slideshow" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+				</object>
+            </div>
+            <!-- SLIDESHOW -->
+
+            <div class="greybar"></div>
+
+            <!-- CONTENT -->
+            <div id="content">
+            </div>
+            <!-- CONTENT -->
+
+            <!-- FOOTER -->
+			<div id="links">
+                <div style="float: left; margin: 10px 0px 0 10px"><a class="link_map" href="#timesanddirections"></a></div>
+                <div style="float: left; margin: 10px 10px;"><a class="link_visitorinfo" href="#visitorinformation"></a></div>
+                <div style="float: left; margin: 10px 10px 0 0;"><a class="link_calendar" href="#calendarandevents"></a></div>
+                <div style="float: left; margin: 10px 10px 0 0;"><a class="link_resources" href="#resources"></a></div>
+                <div style="clear:both;"></div>
+			</div>
+			<div id="footer">
+				<div style="clear:both;height:25px;width:1px"></div>
+				<div id="footer_container">
+					<div class="info"><h1>ADDRESS</h1><p>7195 Cariboo Road<br>Burnaby, BC Canada<br>V3N 4A6</p></div>	
+					<div class="separator"></div>
+					<div class="info"><h1>PHONE</h1><p>(604) 525-7311</p></div>
+					<div class="separator"></div>
+					<div class="info"><h1>FAX</h1><p>(604) 525-7644</p></div>	
+					<div class="separator"></div>
+					<div class="info"><h1>EMAIL</h1><p>cht @ cariboohill . ca</p></div>	
+					<div class="separator"></div>
+					<div class="info">
+						<p style="color: #999">FOLLOW US ON:</p>
+						<a href="http://www.facebook.com/pages/Cariboo-Hill-Temple-Salvation-Army/107667826004737" target="new">
+							<img style="margin-top: 5px; height: 50px; width: 50px;" src="images/facebook.png" alt="Facebook">
+						</a>
+					</div>	
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+
+        <script src="js/lib/json2.js"></script>
+        <script src="js/lib/jquery-1.7.2.min.js"></script>
+        <script src="js/lib/underscore-min.js"></script>
+        <script src="js/lib/backbone-min.js"></script>
+
+        <script src="js/views/homeView.js"></script>
+        <script src="js/views/aboutView.js"></script>
+        <script src="js/views/contactView.js"></script>
+
+        <script src="js/router.js"></script>
+        <script src="js/app.js"></script>
+
+        <script type="text/javascript" src="js/menu.js"></script> 
+        <script type="text/javascript" src="js/slideshow.js"></script> 
+        <script type="text/javascript" src="js/previews.js"></script>
+
+    </body>
+</html>

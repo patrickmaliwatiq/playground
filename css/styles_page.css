@@ -1,0 +1,103 @@
+#pagelogo p {
+	font-family: times new roman;
+	font-size: 27px;
+	color: #FFF;
+}
+
+#extraContent {
+	height: 215; 
+	width: 200px;
+	float: left;
+	text-align: left;
+	margin-left: 20px;
+}
+
+#contentcontainer {
+	margin: 20px auto;
+	width: 900px;
+}
+
+#contenttext{
+	text-align: left;
+	width: 635px;
+	margin-right: 20px;
+}
+
+#content {
+	float: left;
+	background: url(../images/ch_content_divider.jpg) repeat-y top right;
+} 
+
+.portraitContainer {
+	border: 1px solid #D1D1D1; 
+	width: 187px;
+	margin: 0 10px;
+}
+
+.portrait {
+	margin: 5px; 
+	height: 225px; 
+	width: 175px;
+}
+
+#pageImageContainer {
+	border: 1px solid #D1D1D1; 
+	width: 632px;
+	margin: 0 10px 0 0;
+}
+
+#pageImage{
+	margin: 5px; 
+	height: 255px; 
+	width: 300px;
+}
+
+.snippet {
+	font-size: 14px;
+	font-style: italic;
+}
+
+#navigation a {
+	text-decoration: none;
+}
+
+/* ourvaluesourvision */
+.passage {
+	margin: 25px;
+	color: #555;
+	font-style: italic;
+	font-size: 14px;
+	display: none;
+}
+
+#visions a:hover {
+	text-decoration: none;
+}
+
+#visions li {
+	margin-left: 25px;
+	margin-top: 5px;
+}
+
+#values p {
+}
+
+#values .icon {
+	height: 50px;
+	width: 50px;
+	margin: auto 10px auto 0;
+	float: left;
+}
+
+#values .text{
+	width: 530px;
+	float: left;
+}
+
+#values .valueItem {
+	margin-bottom: 20px;
+}
+
+#values .title{
+	font-weight: 900;
+}
