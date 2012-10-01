@@ -36,34 +36,32 @@
                         <li><a href="#contact">contact</a></li>
                 </ul>
             </div>
+						<div class="clear"></div>
             <!-- MENU -->
 
+            <div class="greybar top"></div>
+
             <!-- SLIDESHOW -->
-			<div id="slideshow">
-				<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="940" height="300" id="slideshow" align="middle">
-				<param name="allowScriptAccess" value="sameDomain" />
-				<param name="movie" value="slideshow.swf" /><param name="quality" value="high" /><param name="bgcolor" value="#FFFFFF" /><embed src="slideshow.swf" quality="high" bgcolor="#ffffff" width="940" height="300" name="slideshow" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
-				</object>
-            </div>
+						<div id="slideshow"></div>
             <!-- SLIDESHOW -->
 
-            <div class="greybar"></div>
+            <div class="greybar bottom"></div>
 
             <!-- CONTENT -->
-            <div id="content">
-            </div>
+            <div id="content"></div>
+						<div class="clear"></div>
             <!-- CONTENT -->
 
             <!-- FOOTER -->
-			<div id="links">
-                <div style="float: left; margin: 10px 0px 0 10px"><a class="link_map" href="#timesanddirections"></a></div>
-                <div style="float: left; margin: 10px 10px;"><a class="link_visitorinfo" href="#visitorinformation"></a></div>
-                <div style="float: left; margin: 10px 10px 0 0;"><a class="link_calendar" href="#calendarandevents"></a></div>
-                <div style="float: left; margin: 10px 10px 0 0;"><a class="link_resources" href="#resources"></a></div>
-                <div style="clear:both;"></div>
-			</div>
+						<div id="links">
+								<div class="timesanddirections" style=""><a class="link_map" href="#timesanddirections"></a></div>
+								<div class="visitorinformation"><a class="link_visitorinfo" href="#visitorinformation"></a></div>
+								<div class="calendarandevents"><a class="link_calendar" href="#calendarandevents"></a></div>
+								<div class="resources"><a class="link_resources" href="#resources"></a></div>
+								<div class="clear"></div>
+						</div>
+			<!--
 			<div id="footer">
-				<div style="clear:both;height:25px;width:1px"></div>
 				<div id="footer_container">
 					<div class="info"><h1>ADDRESS</h1><p>7195 Cariboo Road<br>Burnaby, BC Canada<br>V3N 4A6</p></div>	
 					<div class="separator"></div>
@@ -83,6 +81,7 @@
             </div>
             <div class="clear"></div>
         </div>
+				-->
 
 
         <script src="js/lib/json2.js"></script>
@@ -90,16 +89,14 @@
         <script src="js/lib/underscore-min.js"></script>
         <script src="js/lib/backbone-min.js"></script>
 
-        <script src="js/views/homeView.js"></script>
-        <script src="js/views/aboutView.js"></script>
-        <script src="js/views/contactView.js"></script>
+        <script src="js/views/slideshowView.js"></script>
+        <script src="js/views/masterView.js"></script>
 
         <script src="js/router.js"></script>
         <script src="js/app.js"></script>
 
         <script type="text/javascript" src="js/menu.js"></script> 
-        <script type="text/javascript" src="js/slideshow.js"></script> 
-        <script type="text/javascript" src="js/previews.js"></script>
+			</div>
 
     </body>
 </html>

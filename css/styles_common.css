@@ -1,46 +1,51 @@
 body {
-	font-family: "Times New Roman", "Verdana", "Arial";
-	color: #000;
-	background-color: #d8da3d; 
-	background-image: url(../images/ch_bg.jpg);
-	text-align: center;
+font-family: "Verdana", "Arial";
+color: #000;
+background-color: #d8da3d; 
+background-image: url(../images/ch_bg.jpg);
+text-align: center;
 }
 
 body a {
-	text-decoration: none;
-	color: #C59105;
+text-decoration: none;
+color: #C59105;
 }
 
 a:hover {
-	text-decoration: underline;
-	color: #C59105;
+text-decoration: underline;
+color: #C59105;
 }
 
 body p {
-	font-size: 16px;
+font-size: 14px;
 }
 
 body h1 {
-	font-size: 23px;
-	color: #691513;
+font-size: 23px;
+color: #691513;
 }
 
 body h2 {
-	font-size: 17px;
-	font-weight: 700;
+font-size: 17px;
+font-weight: 700;
 }
 
 body h3 {
-	font-size: 17px;
-	font-weight: 700;
-	color: #691513;
+font-size: 17px;
+font-weight: 700;
+color: #691513;
 }
 
+table {
+border: 0px;
+}
+
+
 #mainContainer {
-	margin: 0 auto 0 auto;
-	background-color: #FFFFFF;
-	width: 960px;
-    padding: 5px 0;
+margin: 0 auto 0 auto;
+background-color: #FFFFFF;
+width: 960px;
+  padding-top: 5px;
 }
 
 .redbar {
@@ -50,224 +55,389 @@ body h3 {
     margin: 0px auto
 }
 
-.greybar {
-    height: 1px; 
-    width: 940px; height: 1px;
-    background: #CCC; 
-    margin: 5px auto;
+.greybar.top {
+    width: 940px; 
+    height: 1px;
+    margin: 0 auto 5px auto;
+    border-bottom: 1px solid #CCC;
+}
+
+.greybar.bottom{
+    width: 940px; 
+    height: 1px;
+    margin: 5px auto 0 auto;
+    border-top: 1px solid #CCC;
 }
 
 .clear {
     clear: both;
 }
 
-#title {
-	float: left;
-	height: 70px;
-	width: 450px;
-	margin-bottom: 10px;
-	background: url(../images/ch_logo.jpg) no-repeat;
+.center {
+text-align: center;
 }
 
-#menu {
-	margin: 15px 30px 0 0;
-	float: right;
+.rounded-ccc {
+border-radius: 15px;
+-moz-border-radius: 15px;
+background-color: #CCC;
 }
 
-#facebook {
-}
-
-
-#previews {
-	height: 460px;	
+.title {
+display: block;
+color: #691513;
+font-size: 20px;
+font-weight: 900;
+font-family: "Verdana", "Arial";
+margin-bottom: 10px;
 }
 
 #slideshow {
-	/*background: url(../images/ss_lovers.jpg);*/
+  text-align: center;
+}
+#slideshow .image {
+  height: 150px;
+  width: 940px;
+  margin: 0px auto; 
+}
+
+#slideshow .show {
+	height: 235px;
+  width: 940px;
+	margin: 0 auto;
+	background: url("../images/slideshow.jpg");
+}
+
+#slideshow .show.main{
+	background-position: 0 0;
+}
+
+#slideshow .show.discover-god {
+	background-position: 0 940px;
+}
+
+#slideshow .show.grow-in-christ {
+	background-position: 0 705px;
+}
+
+#slideshow .show.live-in-hope {
+	background-position: 0 470px; 
+}
+
+#slideshow .show.serve-in-love {
+	background-position: 0 235px;
+}
+
+.serve {
+background: url("../images/ba_serve.jpg") repeat scroll 0% 0% transparent;
+}
+
+.discover {
+background: url("../images/ba_discover.jpg") repeat scroll 0% 0% transparent;
+}
+
+.hope {
+background: url("../images/ba_hope.jpg") repeat scroll 0% 0% transparent;
+}
+
+.grow {
+background: url("../images/ba_grow.jpg") repeat scroll 0% 0% transparent;
+}
+
+#title {
+float: left;
+height: 70px;
+width: 450px;
+margin-bottom: 10px;
+background: url(../images/ch_logo.jpg) no-repeat;
+}
+
+#menu {
+margin: 15px 30px 0 0;
+float: right;
+}
+
+#mainBox{
+background: #CCC;
+}
+
+
+#content {
+text-align: left;
+width: 100%;
+padding: 5px 10px 15px 10px;
+}
+
+#content.loader {
+height: 400px;
+width: 960px; 
+background-color: #FFF;
+}
+
+#facebook, #churchInfo {
+float: left;
+background-color: #FFF;
+}
+
+.service-times {
+  margin: 30px 0 30px 0;
+  text-align: center;
+}
+.service-times-box {
+width: 300px;
+height: 300px;
+background-color: #CCC;
+border-radius: 0 0 15px 15px;
+-moz-border-radius: 0 0 15px 15px;
+margin: 0 0 20px 20px;
+color: #000;
+padding: 10px;
+text-align: center;
+border-top: 5px solid #888;
+}
+
+.service-times-box .header {
+font-size: 20px;
+font-weight: 900;
+}
+
+.service-times-box .service-times-info {
+margin-top: 20px;
+}
+
+.service-times-box .service-times-info p {
+margin: 10px 0;
+font-size: 12px;
+text-align: left;
+}
+
+.service-times-box .service-times-info .bulletin {
+  text-align: center;
+  font-weight: 900;
+}
+
+.service-times-box .service-times-info .service-times p {
+text-align: center;
+font-weight: 900;
+}
+
+.anniversary-video-box{
+width: 300px;
+height: 150px;
+background-color: #691513;
+border-radius: 0 15px;
+-moz-border-radius: 0 15px;
+margin-left: 20px;
+color: #FFF;
+padding: 10px;
+text-align: center;
+}
+
+.anniversary-video-box .header {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.anniversary-video-box .videoInfo{
+  margin-top: 10px;
+}
+
+.anniversary-video-box .videos{
+  display: block;
+  margin-top: 25px;
+}
+
+.anniversary-video-box .videos a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.anniversary-video-box .videos a:hover {
+  text-decoration: underline;
 }
 
 #footer {
-	background: #666;
-	height: 120px;
-	width: 960px;
+background: #666;
+height: 120px;
+width: 960px;
 } 
 
 #footer h1 {
-	font-family: verdana;
-	font-size: 20px;
-	font-weight: 700;
-	color: #999;
+font-family: verdana;
+font-size: 20px;
+font-weight: 700;
+color: #999;
 }
 
 #footer p {
-	font-family: verdana;
-	font-size: 10px;
-	font-weight: 700;
-	color: #CCC;
-	padding-top: 5px;
+font-family: verdana;
+font-size: 10px;
+font-weight: 700;
+color: #CCC;
+padding-top: 5px;
 }
 
 #footer .separator {
-	height: 75px;
-	border-right: 1px solid #777;
-	margin: 0 5px 0 5px;
-	float: left;
+height: 75px;
+border-right: 1px solid #777;
+margin: 0 5px 0 5px;
+float: left;
 }
 
 #footer .info {
-	width: 175px;
-	float: left;
+width: 175px;
+float: left;
 }
 
 #footer_container {
-	margin: 0 auto;
-	width: 925px;
+margin: 0 auto;
+width: 925px;
 }
 
 #links {
-	background: #888; 
-	height: 155px; 
-	width:960px;
+background: #888; 
+height: 155px; 
+width:960px;
 }
 
-#announcements a {
-	color: #C59105; 
+#links div {
+float: left;
 }
 
-#announcements .title {
-	font-size: 14px;
-	font-weight: 700;
-	color: #C59105; 
+#links .timesanddirections {
+margin: 10px 0px 0 10px;
 }
 
-#announcements .desc {
-	color: #666;
-	font-size: 14px;
+#links .visitorinformation {
+margin: 10px 10px;
 }
 
-#announcements .date {
-	color: #000; 
-	font-family: verdana; 
-	font-size: 12px; 
-	font-weight: 700;
+#links .calendarandevents{
+margin: 10px 10px 0 0;
 }
 
-#announcements .separator {
-	width: 200px;
-	margin: 20px auto;
-	border-top: 1px solid #CCC;
+#links .resources{
+margin: 10px 10px 0 0;
 }
 
 a.link_map  {
-	display: block;
-	width: 240px;
-	height: 132px;
-	background: transparent url(../images/ch_quick_map.jpg) no-repeat;
+display: block;
+width: 240px;
+height: 132px;
+background: transparent url(../images/ch_quick_map.jpg) no-repeat;
 }
 
 a.link_map:hover {
-	background-position: 0px -132px;
+background-position: 0px -132px;
 }
 
 a.link_visitorinfo {
-	display: block;
-	width: 240px;
-	height: 132px;
-	background: transparent url(../images/ch_quick_visitorinfo.jpg) no-repeat;
+display: block;
+width: 240px;
+height: 132px;
+background: transparent url(../images/ch_quick_visitorinfo.jpg) no-repeat;
 }
 
 a.link_visitorinfo:hover {
-	background-position: 0px -132px;
+background-position: 0px -132px;
 }
 
 a.link_calendar {
-	display: block;
-	width: 240px;
-	height: 132px;
-	background: transparent url(../images/ch_quick_calendar.jpg) no-repeat;
+display: block;
+width: 240px;
+height: 132px;
+background: transparent url(../images/ch_quick_calendar.jpg) no-repeat;
 }
 
 a.link_calendar:hover {
-	background-position: 0px -132px;
+background-position: 0px -132px;
 }
 
 a.link_resources{
-	display: block;
-	width: 170px;
-	height: 132px;
-	background: transparent url(../images/ch_quick_resources.jpg) no-repeat;
+display: block;
+width: 170px;
+height: 132px;
+background: transparent url(../images/ch_quick_resources.jpg) no-repeat;
 }
 
 a.link_resources:hover {
-	background-position: 0px -132px;
+background-position: 0px -132px;
 }
 
-/* rounded corners */
-.roundedcornr_box {
-	width: 250px;
-	background: #c59105;
+/* TIMES AND DIRECTIONS PAGE */ 
+#mapInfoContainer {
+margin: 15px 0 15px 0;
 }
 
-.roundedcornr_top div {
-   background: url(../images/ch_corner_tl.png) no-repeat top left;
-}
-.roundedcornr_top {
-   background: url(../images/ch_corner_tr.png) no-repeat top right;
-}
-.roundedcornr_bottom div {
-   background: url(../images/ch_corner_bl.png) no-repeat bottom left;
-}
-.roundedcornr_bottom {
-   background: url(../images/ch_corner_br.png) no-repeat bottom right;
+#googleMap {
+float: left;
+border: 1px solid #CCC;
+padding: 5px; 
 }
 
-.roundedcornr_top div, .roundedcornr_top, 
-.roundedcornr_bottom div, .roundedcornr_bottom {
-   width: 100%;
-   height: 10px;
-   font-size: 1px;
-}
-.roundedcornr_content { 
-	color: #000;
-}
-
-.roundedcornr_content a { 
-	color: #691513;
+#serviceInfo {
+float: left;
+width: 260px;
+border-radius: 15px;
+-moz-border-radius: 15px;
+padding: 10px;
+background-color: #CCC;
+margin-left: 15px;
 }
 
-.roundedcornr_content h1 { 
-  color: #000;
+/* VISITOR INFO */
+#visitorInfo {
+padding: 10px;
 }
 
-.roundedcornr_content p { 
-  color: #000;
-	margin-left: 10px;
+/* OUR VALUES */
+#ourValues {
+float: left;
+width: 960px;
+}
+#valuesTable {
+margin-left: 10px;
 }
 
-/* CCC rounded corners */
-.roundedcornr_ccc_box {
-	background: #CCC;
+#valuesTable td {
+padding: 0 0 15px 15px;
 }
 
-.roundedcornr_ccc_top div {
-   background: url(../images/ch_corner_ccc_tl.png) no-repeat top left;
-}
-.roundedcornr_ccc_top {
-   background: url(../images/ch_corner_ccc_tr.png) no-repeat top right;
-}
-.roundedcornr_ccc_bottom div {
-   background: url(../images/ch_corner_ccc_bl.png) no-repeat bottom left;
-}
-.roundedcornr_ccc_bottom {
-   background: url(../images/ch_corner_ccc_br.png) no-repeat bottom right;
+#valuesTable p {
+  font-weight: 900;
 }
 
-.roundedcornr_ccc_top div, .roundedcornr_ccc_top, 
-.roundedcornr_ccc_bottom div, .roundedcornr_ccc_bottom {
-   width: 100%;
-   height: 10px;
-   font-size: 1px;
+#valuesTable div {
+  height: 50px;
+  width: 50px;
 }
-.roundedcornr_ccc_content { 
-	margin: 0 10px; 
+
+#valuesTable .people         { background-image: url(../images/ch_values_people.jpg); }
+#valuesTable .wordofgod      { background-image: url(../images/ch_values_wordofgod.jpg); }
+#valuesTable .growth         { background-image: url(../images/ch_values_growth.jpg); }
+#valuesTable .spiritualgifts { background-image: url(../images/ch_values_spiritualgifts.jpg); }
+#valuesTable .relationships  { background-image: url(../images/ch_values_relationships.jpg); }
+#valuesTable .service        { background-image: url(../images/ch_values_service.jpg); }
+#valuesTable .prayer         { background-image: url(../images/ch_values_prayer.jpg); }
+
+/* RESOURCE PAGE */
+#resources {
+  margin-top: 15px;
+}
+
+#resources .resource {
+  margin-bottom: 15px;
+}
+
+
+/* CONTACT PAGE */
+#staffContacts {
+float: left;
+width: 680px;
+}
+
+#churchContact{
+float: left;
+width: 260px;
 }

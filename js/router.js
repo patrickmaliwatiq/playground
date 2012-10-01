@@ -1,26 +1,13 @@
 var AppRouter = Backbone.Router.extend({
-    routes: {
-        'about' : 'about',
-        'contact': 'contact',
-        '*actions': 'defaultAction'
+    navigateTo: function(page) {
+        if (!page || $.inArray(page, window.PAGES) < 0) { page = 'home'; }
+        this.masterView.loadPage(page);
     },
-
-    about: function() {
-         var aboutView = new AboutView();
-         aboutView.loadPage();
-    },
-
-    contact: function() {
-         var contactView = new ContactView();
-         contactView.loadPage();
-    },
-
-    defaultAction: function() {
-        var homeView = new HomeView();
-        homeView.loadPage();
-    },
-    
     initialize: function() {
+        this.route(/^(.*?)$/, "navigateTo");
+        this.masterView = new MasterView();
         Backbone.history.start();
     }
 });
+
+window.PAGES = ['timesanddirections', 'visitorinformation', 'ourvalues', 'ministries', 'calendarandevents', 'resources', 'contact'];
